@@ -49,4 +49,4 @@ Developing the Tip Calculator has provided valuable learning experiences:
 ## Author
 
 - Frontend Mentor - (https://www.frontendmentor.io/profile/yussifsayibu)
-- Tiktok - (https://www.twitter.com/yuss.dev)
+- Tiktok - (https://www.tiktok.com/yuss.dev)

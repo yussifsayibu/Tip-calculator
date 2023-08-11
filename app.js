@@ -110,8 +110,6 @@ function calcHandler (){
         inputsCalculation (50,percent50Button)
     });
 
-    peopleInput.addEventListener('input',inputsCalculation);
-
 
     function customHandler (){
         const billValue = parseFloat(billInput.value);
@@ -133,7 +131,7 @@ function calcHandler (){
     
 
     customInput.addEventListener('input',customHandler);
-    peopleInput.addEventListener('input',customHandler);
+
 
 
     // For the reset button

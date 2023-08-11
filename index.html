@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <div class="logo">
+    <img src="images/logo.svg" alt="logo">
+  </div>
+
+  <main>
+
+    <div class="first-container">
+
+      <div class="bill">
+
+        <h2>Bill<h2>
+
+        <div class="bill-input">
+
+          <img src="images/icon-dollar.svg" alt="">
+          <input type="text" id="js-bill-input" placeholder="0">
+
+        </div>
+
+      </div>
+
+      <div class="tip-container">
+
+        <h2>Select Tip %</h2>
+
+        <div class="tip-items">
+
+          <button class="js-5-percent tip-button">5%</button>
+          <button class="js-10-percent tip-button">10%</button>
+          <button class="js-15-percent tip-button">15%</button>
+          <button class="js-25-percent tip-button">25%</button>
+          <button class="js-50-percent tip-button">50%</button>
+          <input type="text" class="js-custom" placeholder="Custom">
+
+        </div>
+
+      </div>
+
+      <div class="number-of-people">
+
+        <div class="txt-info">
+          <h2>Number of People</h2>
+          <h4 class="warning-msg">Can't be zero</h4>
+        </div>
+        
+        <div class="number-of-people-container">
+
+          <img src="images/icon-person.svg" alt="">
+          <input type="text" class="js-num-people" placeholder="0">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="second-container">
+
+      <div class="total-amount">
+
+        <div class="tip-amount">
+
+        <div class="tip-amount-container">
+          <div class="tip-title">
+            <h2>Tip Amount</h2>
+            <h4>/ person</h4>
+          </div>
+          <h3 class="tip-results">$0.00</h3>
+        </div>
+
+      </div>
+
+      <div class="total">
+
+        
+        <div class="total-container">
+          <div class="total-title">
+            <h2>Total</h2>
+            <h4>/ person</h4>
+          </div>
+          <h3 class="total-split-per-person">$0.00</h3>
+        </div>
+
+      </div>
+      </div>
+
+      <button class="js-reset-btn" disabled>Reset</button>
+
+    </div>
+
+  </main>
+
+  
+  <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Yussif Sayibu</a>.
+    </p>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+
+
+    /* Primary */
+
+    --Strong-cyan--: hsl(172, 67%, 45%);
+
+    /* Neutral */
+
+    --Very-dark-cyan--: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan--: hsl(186, 14%, 43%);
+    --Grayish-cyan--: hsl(184, 14%, 56%);
+    --Light-grayish-cyan--: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan--: hsl(189, 41%, 97%);
+    --White--: hsl(0, 0%, 100%);
+
+    --font--: 'Space Mono', monospace;
+}
+
+body{
+    font-family: var(--font--);
+    background-color: var(--Light-grayish-cyan--);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100vh;
+}
+
+.logo img{
+    width: 65px;
+}
+
+main{
+    background-color: var(--White--);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 25px;
+}
+
+
+
+main .first-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+main .first-container h2{
+    font-size: 16px;
+    color: var(--Dark-grayish-cyan--);
+    padding-bottom: 10px;
+}
+
+main .first-container .bill .bill-input{
+    display: flex;
+    align-items: center;
+    background-color: var(--Very-light-grayish-cyan--);
+    border-radius: 5px;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .first-container .bill .bill-input:hover{
+    outline: none;
+    border: 2px solid var(--Strong-cyan--);
+}
+
+main .first-container .bill .bill-input img{
+   width: 10px;
+}
+
+main .first-container .bill .bill-input input{
+   outline: none;
+   border: none;
+   width: 100%;
+   height: 40px;
+   background-color: transparent;
+   font-size: 24px;
+   font-weight: 700;
+   text-align: right;
+   font-family: var(--font--);
+   color: var(--Very-dark-cyan--);
+
+}
+
+main .first-container .bill .bill-input input::placeholder{
+    font-family: var(--font--);
+    color: var(--Grayish-cyan--);
+}
+
+
+main .first-container .tip-container .tip-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+}
+
+main .first-container .tip-container .tip-items button{
+    outline: none;
+    border: none;
+    width: 110px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--Very-dark-cyan--);
+    color: var(--White--);
+    font-family: var(--font--);
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+main .first-container .tip-container .tip-items button:hover{
+    color: var(--Very-dark-cyan--);
+    background: hsl(171, 57%, 75%);
+}
+
+main .first-container .tip-container .tip-items button.selected{
+    color: var(--Very-dark-cyan--);
+    background: hsl(171, 57%, 75%);
+}
+
+main .first-container .tip-container .tip-items input{
+    outline: none;
+    border: none;
+    width: 110px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: var(--font--);
+    background-color: var(--Very-light-grayish-cyan--);
+    border-radius: 5px;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Very-dark-cyan--);
+    padding: 0px 5px;
+    transition: all 0.3s ease-in;
+    
+}
+
+
+
+main .first-container .tip-container .tip-items input::placeholder{
+    text-align: center;
+    
+    
+}
+
+main .first-container .tip-container .tip-items input:focus{
+    border: 2px solid var(--Strong-cyan--);
+}
+
+
+main .first-container .number-of-people .txt-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .first-container .number-of-people .txt-info h4{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(247, 58, 58);
+    display: none;
+}
+
+
+main .first-container .number-of-people .number-of-people-container{
+    display: flex;
+    align-items: center;
+    background-color: var(--Very-light-grayish-cyan--);
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+.number-of-people-container.active-zero{
+    border: 2px solid rgb(247, 58, 58);
+}
+
+main .first-container .number-of-people .number-of-people-container img{
+   width: 10px;
+}
+
+main .first-container .number-of-people .number-of-people-container input{
+   outline: none;
+   border: none;
+   width: 100%;
+   height: 40px;
+   background-color: transparent;
+   font-size: 24px;
+   font-weight: 700;
+   text-align: right;
+   font-family: var(--font--);
+   color: var(--Very-dark-cyan--);
+
+}
+
+main .first-container .number-of-people .number-of-people-container::placeholder{
+    font-family: var(--font--);
+    color: var(--Grayish-cyan--);
+}
+
+
+
+
+
+/* Second container */
+
+main .second-container{
+    background-color: var(--Very-dark-cyan--);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+
+main .second-container .total-amount{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .second-container h2{
+    font-size: 16px;
+    color: var(--White--);
+}
+
+main .second-container .tip-amount-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .second-container h4{
+    font-size: 12px;
+    font-size: 700;
+    color: var(--Grayish-cyan--);
+}
+
+main .second-container h3{
+    font-size: 44px;
+    font-size: 700;
+    color: var(--Strong-cyan--);
+}
+
+main .second-container .total-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .second-container button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: var(--Strong-cyan--);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight:700;
+    font-family: var(--font--);
+    color: var(--Very-dark-cyan--);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background 0.3s ease;
+}
+
+main .second-container button:hover{
+    background: hsl(171, 57%, 75%);
+}
+
+main .second-container button:disabled{
+    background-color: hsl(183, 73%, 22%);
+}
+
+
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    text-align: center; 
+    width: 100%;
+    padding: 10px 0px;
+
+}
+
+.attribution p{ 
+    font-size: 13px;
+    
+}
+.attribution p a { 
+    color: hsl(228, 45%, 44%); 
+    font-weight: bold;
+}
+
+/* Styles for screens 1200px and above (e.g., desktops) */
+@media only screen and (min-width: 1200px){
+    
+}
+
+
+/* Styles for screens smaller than or equal to 767px (e.g., mobile devices) */
+@media only screen and (max-width: 767px){
+
+    body{
+        height: auto;
+        padding-top: 30px;
+    }
+
+
+    main{
+       
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        width: 100%;
+        min-height: 100vh;
+       
+
+    }
+
+
+    main .first-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+
+
+    
+    
+    main .first-container .tip-container .tip-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        
+    }
+    
+    main .first-container .tip-container .tip-items button{
+       
+        width: 160px;
+        height: 50px;
+       
+    }
+
+    main .first-container .tip-container .tip-items input{
+    
+        width: 160px;
+        height: 50px;
+       
+    }
+    
+    
+    /* Second container */
+    
+    main .second-container{
+        background-color: var(--Very-dark-cyan--);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0px 25px;
+    
+    }
+    
+    
+    
+    .attribution { 
+        display: none;
+    
+    }
+    
+}
